@@ -208,7 +208,6 @@ body {
 .column__item {
   position: relative;
   padding: 3rem;
-  filter: grayscale(80%);
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
