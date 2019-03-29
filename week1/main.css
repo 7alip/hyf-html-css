@@ -12,7 +12,6 @@
 *:after {
   box-sizing: inherit;
   margin: 0;
-  padding: 0;
 }
 
 html {
@@ -44,8 +43,6 @@ body {
   grid-template-rows: auto 1fr;
   grid-gap: var(--grid-gap);
   padding: var(--grid-gap);
-  min-height: 100vh;
-  margin: 0 auto;
 }
 
 .card {
@@ -125,6 +122,10 @@ body {
   height: 2em;
 }
 
+.resume__section {
+  flex: 1;
+}
+
 .resume__header {
   color: var(--color-primary);
   border-bottom: 3px solid var(--color-primary);
@@ -140,8 +141,31 @@ body {
 }
 
 .resume__date {
-  width: 15rem;
+  margin-right: 2rem;
   font-weight: 700;
+  position: relative;
+}
+
+.resume__date::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #FFC500;
+  left: -5rem;
+  border-radius: 50%;
+  top: 1px;
+}
+
+.resume__date::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  left: -4.5rem;
+  top: 6px;
+  border-radius: 50%;
 }
 
 .resume__detail span {
@@ -156,7 +180,7 @@ body {
 .column__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  justify-items: center;
 }
 
 .column__header {
@@ -185,28 +209,12 @@ body {
   position: relative;
   padding: 3rem;
   filter: grayscale(80%);
-  transition: all 2s ease-in-out;
+  transition: all .5s ease-in-out;
   cursor: pointer;
 }
 
-.column__item::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  border: 3px dashed var(--color-secondary);
-  border-radius: 50%;
-}
-
 .column__item:hover {
-  filter: grayscale(0%);
   transform: scale(1.1);
-}
-
-.column__item:hover::after {
-  -webkit-animation: spin 2s ease-in-out;
 }
 
 .column__grid svg {
@@ -214,20 +222,9 @@ body {
   height: 7rem;
 }
 
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
-}
-
 /*
   MEDIA QUERIES
 */
-
-@media only screen and (max-width: 80rem) {
-  .resume__section--grid .row {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media only screen and (max-width: 60rem) {
   .wrapper {
@@ -317,5 +314,12 @@ body {
     content: "📅";
     filter: grayscale(100%);
     margin-right: 1rem;
+    position: relative;
+    left: 0;
+    background: none;
+  }
+
+  .resume__date::after {
+    display: none;
   }
 }
