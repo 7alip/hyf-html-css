@@ -5,6 +5,15 @@
   --color-text-primary: #707070;
   --color-bg: #d4d6d6;
   --grid-gap: 3vw;
+
+  --photoshop: calc(500 - 2.84*55);
+  --illustrator: calc(500 - 2.84*60);
+  --indesign: calc(500 - 2.84*75);
+  --xd: calc(500 - 2.84*60);
+  --html5: calc(500 - 2.84*90);
+  --sass: calc(500 - 2.84*60);
+  --javascript: calc(500 - 2.84*40);
+  --angular: calc(500 - 2.84*35);
 }
 
 *,
@@ -207,9 +216,26 @@ body {
 
 .column__item {
   position: relative;
+  display: flex;
   padding: 3rem;
   transition: all .5s ease-in-out;
   cursor: pointer;
+}
+
+.column__item .icon__circle {                      
+  transform: rotate(-90deg) scale(2);
+  position: absolute;
+}
+
+.outer {
+  stroke: var(--color-secondary);
+  stroke-dasharray: 500;
+  animation: load 1s linear alternate;
+  animation-fill-mode: forwards;
+}
+
+.inner {
+  stroke: #dddddd;
 }
 
 .column__item:hover {
@@ -217,8 +243,8 @@ body {
 }
 
 .column__grid svg {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 /*
