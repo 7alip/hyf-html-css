@@ -1,0 +1,14 @@
+1.  CREATE HIDDEN FILE:
+    touch .filename
+
+    LIST HIDDEN FILE
+    ls -a
+
+2.  CREATE A CUSTOM PATH
+    mkdir -p these\folders\are\just\for\fun
+
+3.  VERIFY
+    echo "test" > fun
+    echo "another test" >> fun
+    wc -c fun
+    29 fun
