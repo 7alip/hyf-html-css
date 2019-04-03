@@ -12,3 +12,7 @@
     echo "another test" >> fun
     wc -c fun
     29 fun
+
+4.  WITHOUT NEW LINE
+    echo -n test > fun
+    echo -n another test >> fun
