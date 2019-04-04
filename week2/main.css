@@ -235,7 +235,7 @@ section:nth-child(2) h2 {
     max-width: 50%;
   }
 
-  #grid-floats .grid-item:first-child img {
+  .grid-item:first-child img {
     width: 70%;
     display: block;
     margin: auto;
