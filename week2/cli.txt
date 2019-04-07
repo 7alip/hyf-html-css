@@ -1,18 +1,52 @@
-1.  CREATE HIDDEN FILE:
-    touch .filename
+1.  CREATE AND VIEW HIDDEN FILE:
 
-    LIST HIDDEN FILE
-    ls -a
+    7alip@7ALIP MINGW64 ~/code
+    $ ls
+    aftame/      flex-lesson/       hyfclass/      instagram-profile/  sass/
+    desktop.ini  float-responsive/  hyf-html-css/  jonas/              these/
 
-2.  CREATE A CUSTOM PATH
-    mkdir -p these\folders\are\just\for\fun
+    7alip@7ALIP MINGW64 ~/code
+    $ touch .hidden-file.txt
 
-3.  VERIFY
-    echo "test" > fun
-    echo "another test" >> fun
-    wc -c fun
-    29 fun
+    7alip@7ALIP MINGW64 ~/code
+    $ ls
+    aftame/      flex-lesson/       hyfclass/      instagram-profile/  sass/
+    desktop.ini  float-responsive/  hyf-html-css/  jonas/              these/
+    l
+    7alip@7ALIP MINGW64 ~/code
+    $ ls -a
+    ./   .hidden-file.txt  desktop.ini   float-responsive/  hyf-html-css/       jonas/  these/
+    ../  aftame/           flex-lesson/  hyfclass/          instagram-profile/  sass/
+    
+    
+
+2.  CREATE A CUSTOM ABSOLUTE PATH
+
+    7alip@7ALIP MINGW64 ~/code
+    $ mkdir -p c:/users/7alip/code/these/folders/are/just/for/fun
+
+    7alip@7ALIP MINGW64 ~/code
+    $ cd these/folders/are/just/for/fun
+
+
+
+3.  VERIFY NUMBER OF CHARACTERS
+
+    7alip@7ALIP MINGW64 ~/code/these/folders/are/just/for/fun
+    $ echo "test" > fun
+
+    7alip@7ALIP MINGW64 ~/code/these/folders/are/just/for/fun
+    $ echo "another test" >> fun
+
+    7alip@7ALIP MINGW64 ~/code/these/folders/are/just/for/fun
+    $ wc -c fun
+    18 fun
+    
+
 
 4.  WITHOUT NEW LINE
-    echo -n test > fun
-    echo -n another test >> fun
+    7alip@7ALIP MINGW64 ~/code/these/folders/are/just/for/fun
+    $ echo "test" > fun
+    
+    7alip@7ALIP MINGW64 ~/code/these/folders/are/just/for/fun
+    $ echo -n "another test" >> fun
