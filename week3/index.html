@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Think With Google</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header page-container">
+        <div class="header__left">
+          <button class="menu-trigger">
+            <svg role="presentation" class="mobile-menu">
+              <use xlink:href="assets/img/icons.svg#menu"></use>
+            </svg>
+          </button>
+          <a href="#" class="header__logo">
+            <svg role="presentation" class="icon-logo">
+              <use xlink:href="assets/img/icons.svg#twg-logo-color"></use>
+            </svg>
+          </a>
+          <select aria-label="Select your location" class="locale-select">
+            <option data-locale="zh-tw" value="/intl/zh-tw/"
+              >中文 - 台灣</option
+            >
+            <option data-locale="de-de" value="/intl/de-de/"
+              >Deutsch - Deutschland</option
+            >
+            <option data-locale="en-apac" value="/intl/en-apac/"
+              >English - Asia Pacific</option
+            >
+            <option data-locale="en-au" value="/intl/en-aunz/"
+              >English - Australia</option
+            >
+            <option data-locale="en-ca" value="/intl/en-ca/"
+              >English - Canada</option
+            >
+            <option data-locale="en-cee" value="/intl/en-cee/"
+              >English - Central Eastern Europe</option
+            >
+            <option data-locale="en-145" value="/intl/en-145/"
+              >English - MENA</option
+            >
+            <option data-locale="fr-145" value="/intl/fr-145/"
+              >Français - MENA</option
+            >
+            <option data-locale="en-154" value="/intl/en-154/"
+              >English - Nordics &amp; Benelux</option
+            >
+            <option data-locale="en-gb" value="/intl/en-gb/"
+              >English - United Kingdom</option
+            >
+            <option selected data-locale="en-us" value="/"
+              >English - United States</option
+            >
+            <option data-locale="es-es" value="/intl/es-es/"
+              >Español - España</option
+            >
+            <option data-locale="es-419" value="/intl/es-419/"
+              >Español - Latinoamérica</option
+            >
+            <option data-locale="fr-fr" value="/intl/fr-fr/"
+              >Français - France</option
+            >
+            <option data-locale="it-it" value="/intl/it-it/"
+              >Italiano - Italia</option
+            >
+            <option data-locale="ja-jp" value="/intl/ja-jp/"
+              >日本語 - 日本</option
+            >
+            <option data-locale="ko-kr" value="/intl/ko-kr/"
+              >한국어 - 대한민국</option
+            >
+            <option data-locale="pt-br" value="/intl/pt-br/"
+              >Português (Brasil) - Brasil</option
+            >
+            <option data-locale="ru-ru" value="/intl/ru-ru/"
+              >русский - Россия</option
+            >
+            <option data-locale="th-th" value="/intl/th-th/"
+              >ภาษาไทย - ประเทศไทย</option
+            >
+            <option data-locale="tr-tr" value="/intl/tr-tr/"
+              >Türkçe - Türkiye</option
+            >
+          </select>
+        </div>
+        <div class="header__right">
+          <nav class="header__menu">
+            <a class="menu-item" href="#">Consumer Insights</a>
+            <div class="dropdown-menu">
+              <span class="menu-label">
+                <a href="#">Marketing Resources</a>
+              </span>
+              <div class="dropdown-submenu">
+                <a href="#" class="menu-item">Data & Measurement</a>
+                <a href="#" class="menu-item">Experience & Design</a>
+                <a href="#" class="menu-item">Monetization</a>
+                <a href="#" class="menu-item">Omnichannel</a>
+                <a href="#" class="menu-item">Organizational Culture</a>
+                <a href="#" class="menu-item">Programmatic Advertising</a>
+                <hr />
+                <a href="#" class="menu-item">Tools</a>
+                <a href="#" class="menu-item">Tutorials</a>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <span class="menu-label">
+                <a href="#">Advertising Channels</a>
+              </span>
+              <div class="dropdown-submenu">
+                <a href="#" class="menu-item">Emerging Technology</a>
+                <a href="#" class="menu-item">Mobile</a>
+                <a href="#" class="menu-item">Search</a>
+                <a href="#" class="menu-item">Youtube</a>
+              </div>
+            </div>
+          </nav>
+          <div class="search-form-container">
+            <button class="header__search-button">
+              <svg role="presentation" class="icon icon-search">
+                <use xlink:href="assets/img/icons.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main" role="main">
+        <section class="hero page-container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Insights you want. <br />
+              Inspiration you need.
+            </h1>
+            <p class="hero__text">Stay on top of the latest and greatest</p>
+            <a href="#" class="btn btn--primary">Subscribe</a>
+          </div>
+          <div class="hero__link">
+            <a href="#"
+              >Get your site up to speed with the new Test My Site. Enter your
+              domain now for customized tips and fixes.
+              <svg role="presentation" class="icon icon-search">
+                <use
+                  xlink:href="assets/img/icons.svg#arrow-forward-circled"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <div class="main__content">
+          <section class="section page-container">
+            <h2 class="section__title">Latest trends and stories</h2>
+            <div class="card-group">
+              <div class="card card--featured">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">6 industry leaders on the changing nature of primetime</h4>
+                    </div>
+                    <div class="card__footer">
+                      <span class="category">Video</span>
+                      <span class="date">April 2019</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">How omnichannel grocers can win as shopping moves online</h4>
+                    </div>
+                    <div class="card__footer">
+                      <span class="category">Article</span>
+                      <span class="date">March 2019</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">Why mobile gaming is the future of leisure time</h4>
+                    </div>
+                    <div class="card__footer">
+                      <span class="category">Infographic</span>
+                      <span class="date">April 2019</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">How brands can think beyond international Women's Day</h4>
+                    </div>
+                    <div class="card__footer">
+                      <span class="category">Perspective</span>
+                      <span class="date">March 2019</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">How video helped one travel marketer convert undecided customers</h4>
+                    </div>
+                    <div class="card__footer">
+                      <span class="category">Case Study</span>
+                      <span class="date">April 2019</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card card--featured">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">Google's Unskippable Labs has run over 250 video ad experiments. Learn their approach</h4>
+                    </div>
+                    <div class="card__footer">
+                      <span class="category">Video</span>
+                      <span class="date">March 2019</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main__content main__content--bg-light">
+          <section class="section page-container">
+            <h2 class="section__title">Take a deeper dive</h2>
+            <div class="main-navigations">
+              <div class="main-navigation">
+                <h3 class="main-navigation__title">
+                  <span>Marketing Resources</span>
+                  <img src="assets/img/icon_resources-01.svg" alt=""></h3>
+                <ul class="main-navigation__list">
+                  <li class="main-navigation__item"><a href="#">Data Analytics & Measurement</a></li>
+                  <li class="main-navigation__item"><a href="#">User Experience & Design</a></li>
+                  <li class="main-navigation__item"><a href="#">Mobile</a></li>
+                  <li class="main-navigation__item"><a href="#">Omnichannel</a></li>
+                  <li class="main-navigation__item"><a href="#">Programmatic Advertising</a></li>
+                </ul>
+              </div>
+              <div class="main-navigation">
+                <h3 class="main-navigation__title">
+                  <span>Advertising Channels</span>
+                  <img src="assets/img/icon_marketingstrategies-01.svg" alt=""></h3>
+                <ul class="main-navigation__list">
+                  <li class="main-navigation__item"><a href="#">Emerging & Assistive Technology</a></li>
+                  <li class="main-navigation__item"><a href="#">Search</a></li>
+                  <li class="main-navigation__item"><a href="#">Marketing on YouTube</a></li>
+                </ul>
+              </div>
+              <div class="main-navigation">
+                <h3 class="main-navigation__title">
+                  <span>Consumer Insights</span>
+                  <img src="assets/img/icon_consumerinsights-01.svg" alt=""></h3>
+                  <p class="main-navigation__text">Learn about consumer trends, from how people are using apps to video consumption on mobile.</p>
+                <ul class="main-navigation__list">
+                  <li class="main-navigation__item"><a href="#">Consumer Insights</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main__content main__content--bg-light">
+          <section class="section page-container">
+            <h2 class="section__title">Tools for Marketers</h2>
+            <div class="card-group">
+              <div class="card card--tools">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">Culture & Trends</h4>
+                      <p class="card__description">I want to find out what my potential customers are engaging with and searching for.</p>
+                    </div>
+                    <div class="card__footer">
+                      <button class="btn btn--light btn--link">Learn More</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card card--tools">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">Culture & Trends</h4>
+                      <p class="card__description">I want to find out what my potential customers are engaging with and searching for.</p>
+                    </div>
+                    <div class="card__footer">
+                      <button class="btn btn--light btn--link">Learn More</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card card--tools">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">Culture & Trends</h4>
+                      <p class="card__description">I want to find out what my potential customers are engaging with and searching for.</p>
+                    </div>
+                    <div class="card__footer">
+                      <button class="btn btn--light btn--link">Learn More</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card card--tools">
+                <a class="card__inner" href="#">
+                  <div class="card__image"></div>
+                  <div class="card__text">
+                    <div class="card__body">
+                      <h4 class="card__title">Culture & Trends</h4>
+                      <p class="card__description">I want to find out what my potential customers are engaging with and searching for.</p>
+                    </div>
+                    <div class="card__footer">
+                      <button class="btn btn--light btn--link">Learn More</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="section__footer">
+              <button class="btn btn--primary">See All Tools</button>
+            </div>
+          </section>
+        </div>
+        <div class="subscribe subscribe--primary">
+          <div class="subscribe__inner page-container">
+            <h2 class="subscribe__header">
+                Get the latest data, insights, and inspiration from Google.
+            </h2>
+            <button class="btn btn--light">Subscribe</button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-inner page-container">
+          <div class="footer__top">
+            <div class="footer__logo">
+              <a href="#" class="footer__item">
+                <svg role="presentation" class="icon-footer-logo">
+                  <use xlink:href="assets/img/icons.svg#google-logo"></use>
+                </svg>
+              </a>
+            </div>
+            <nav class="footer__nav">
+              <a href="#" class="footer__item">About Google</a>
+              <a href="" class="footer__item">Products</a>
+              <a href="" class="footer__item">Advertising</a>
+              <a href="" class="footer__item">Business</a>
+              <a href="" class="footer__item">Privacy & Terms</a>
+              <a href="" class="footer__item">About Think with Google</a>
+            </nav>
+          </div>
+          <div class="footer__bottom">
+              <select aria-label="Select your location" class="locale-select locale-select--dark">
+                <option data-locale="zh-tw" value="/intl/zh-tw/"
+                  >中文 - 台灣</option
+                >
+                <option data-locale="de-de" value="/intl/de-de/"
+                  >Deutsch - Deutschland</option
+                >
+                <option data-locale="en-apac" value="/intl/en-apac/"
+                  >English - Asia Pacific</option
+                >
+                <option data-locale="en-au" value="/intl/en-aunz/"
+                  >English - Australia</option
+                >
+                <option data-locale="en-ca" value="/intl/en-ca/"
+                  >English - Canada</option
+                >
+                <option data-locale="en-cee" value="/intl/en-cee/"
+                  >English - Central Eastern Europe</option
+                >
+                <option data-locale="en-145" value="/intl/en-145/"
+                  >English - MENA</option
+                >
+                <option data-locale="fr-145" value="/intl/fr-145/"
+                  >Français - MENA</option
+                >
+                <option data-locale="en-154" value="/intl/en-154/"
+                  >English - Nordics &amp; Benelux</option
+                >
+                <option data-locale="en-gb" value="/intl/en-gb/"
+                  >English - United Kingdom</option
+                >
+                <option selected data-locale="en-us" value="/"
+                  >English - United States</option
+                >
+                <option data-locale="es-es" value="/intl/es-es/"
+                  >Español - España</option
+                >
+                <option data-locale="es-419" value="/intl/es-419/"
+                  >Español - Latinoamérica</option
+                >
+                <option data-locale="fr-fr" value="/intl/fr-fr/"
+                  >Français - France</option
+                >
+                <option data-locale="it-it" value="/intl/it-it/"
+                  >Italiano - Italia</option
+                >
+                <option data-locale="ja-jp" value="/intl/ja-jp/"
+                  >日本語 - 日本</option
+                >
+                <option data-locale="ko-kr" value="/intl/ko-kr/"
+                  >한국어 - 대한민국</option
+                >
+                <option data-locale="pt-br" value="/intl/pt-br/"
+                  >Português (Brasil) - Brasil</option
+                >
+                <option data-locale="ru-ru" value="/intl/ru-ru/"
+                  >русский - Россия</option
+                >
+                <option data-locale="th-th" value="/intl/th-th/"
+                  >ภาษาไทย - ประเทศไทย</option
+                >
+                <option data-locale="tr-tr" value="/intl/tr-tr/"
+                  >Türkçe - Türkiye</option
+                >
+              </select>
+              <nav class="footer__nav footer__nav--social">
+                <a class="footer__item" href="#">
+                  <svg role="presentation" class="icon-social">
+                    <use xlink:href="assets/img/icons.svg#share-linkedin"></use>
+                  </svg>
+                </a>
+                <a class="footer__item" href="#">
+                  <svg role="presentation" class="icon-social">
+                    <use xlink:href="assets/img/icons.svg#share-twitter"></use>
+                  </svg>
+                </a>
+                <a class="footer__item" href="#">
+                  <svg role="presentation" class="icon-social">
+                    <use xlink:href="assets/img/icons.svg#share-facebook"></use>
+                  </svg>
+                </a>
+                <a class="footer__item" href="#">
+                  <svg role="presentation" class="icon-social">
+                    <use xlink:href="assets/img/icons.svg#share-youtube"></use>
+                  </svg>
+                </a>
+                <a class="footer__item" href="#">
+                  <svg role="presentation" class="icon-social">
+                    <use xlink:href="assets/img/icons.svg#rss-feed"></use>
+                  </svg>
+                </a>
+              </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

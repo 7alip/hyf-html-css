@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  color: $color-font-light;
+  font-family: Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  background-color: $color-background;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.page-container {
+  max-width: 144rem;
+  padding: 0 3.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
