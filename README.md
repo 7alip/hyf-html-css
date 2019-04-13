@@ -7,3 +7,5 @@ In this repo I'll share all my homework projects in HackYourFuture.
 2. [Week 1 - CV Project](https://7alip.github.io/hyf-html-css/week1/)
 
 3. [Week 2 - Float & Flex Layout](https://7alip.github.io/hyf-html-css/week2/)
+
+4. [Week 3 - Web Page Design (Think With Google)](https://7alip.github.io/hyf-html-css/week3/)
