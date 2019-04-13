@@ -1,5 +1,7 @@
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
@@ -35,4 +37,8 @@ body {
   padding: 0 3.2rem;
   margin-left: auto;
   margin-right: auto;
+
+  @include sm {
+    padding: 0 1rem;
+  }
 }

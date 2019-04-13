@@ -1,18 +1,40 @@
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin transparent-input {
-    border-color: transparent;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
+  border-color: transparent;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin grid-item($division) {
+  width: calc(100% / #{$division} - 2 * #{$gutter});
+}
+
+@mixin sm {
+  @media (max-width: #{ $screen-sm }) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{ $screen-md }) {
+    @content;
+  }
+}
+
+@mixin rnd($width) {
+  @media (max-width: #{ $width }) {
+    @content;
+  }
 }
